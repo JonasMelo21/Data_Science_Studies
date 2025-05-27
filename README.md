@@ -5,7 +5,8 @@ Repositório dos meus estudos em Ciência de Dados, com foco em análise crític
 
 ## Projetos
 
-### [Projeto 01: Classificação da Performance de Estudantes — Limpeza, Análise e Balanceamento](projeto1.ipynb)
+### Projeto 01: Classificação da Performance de Estudantes — Limpeza, Análise e Balanceamento
+**Link para o notebook --> [projeto1](projeto1.ipynb)**
 
 Projeto de classificação baseado em dados educacionais (idade, etnia, faltas, etc.), com forte ênfase em preparação de dados e decisões fundamentadas.
 
