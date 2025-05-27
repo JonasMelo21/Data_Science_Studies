@@ -8,7 +8,7 @@ Repositório dos meus estudos em Ciência de Dados, com foco em análise crític
 ### Projeto 01: Classificação da Performance de Estudantes — Limpeza, Análise e Balanceamento
 **Link para o notebook --> [projeto1](projeto1.ipynb)**
 
-Projeto de classificação baseado em dados educacionais (idade, etnia, faltas, etc.), com forte ênfase em preparação de dados e decisões fundamentadas.
+Projeto de classificação baseado em dados educacionais (idade, etnia, faltas, etc.), com forte ênfase em preparação de dados e decisões fundamentadas. Pois sem o pré-processamento correto, um aspecto *indesejado* teria enviesado a análise e o treinamento do modelo desde o início.
 
 > O projeto melhorou minha capacidade de identificar falhas na estrutura do dataset,como valores inconsistentes nas colunas e  aplicar técnicas apropriadas de balanceamento e construir um pipeline de classificação confiável e bem justificado.
 
