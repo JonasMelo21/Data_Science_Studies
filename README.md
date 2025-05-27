@@ -9,6 +9,8 @@ Repositório dos meus estudos em Ciência de Dados, com foco em análise crític
 
 Projeto de classificação baseado em dados educacionais (idade, etnia, faltas, etc.), com forte ênfase em preparação de dados e decisões fundamentadas.
 
+> O projeto melhorou minha capacidade de identificar falhas na estrutura do dataset, aplicar técnicas apropriadas de balanceamento e construir um pipeline de classificação confiável e bem justificado.
+
 **Pontos-chave:**
 
 * **Correção da variável alvo:** A coluna `GradeClass`, que representa faixas de GPA, apresentava classificações incorretas — alunos com nota abaixo de 3.5 estavam rotulados como se tivessem nota acima. Refiz a segmentação com base no GPA real. Sem essa correção, a análise e o modelo estariam enviesados desde o início.
@@ -21,4 +23,3 @@ Projeto de classificação baseado em dados educacionais (idade, etnia, faltas, 
 * **F1-score (macro):** 0.96
 * Desempenho estável em todas as classes, mesmo com dados originalmente desbalanceados.
 
-> O projeto melhorou minha capacidade de identificar falhas na estrutura do dataset, aplicar técnicas apropriadas de balanceamento e construir um pipeline de classificação confiável e bem justificado.
