@@ -9,7 +9,7 @@ Repositório dos meus estudos em Ciência de Dados, com foco em análise crític
 
 Projeto de classificação baseado em dados educacionais (idade, etnia, faltas, etc.), com forte ênfase em preparação de dados e decisões fundamentadas.
 
-> O projeto melhorou minha capacidade de identificar falhas na estrutura do dataset, aplicar técnicas apropriadas de balanceamento e construir um pipeline de classificação confiável e bem justificado.
+> O projeto melhorou minha capacidade de identificar falhas na estrutura do dataset,como valores inconsistentes nas colunas e  aplicar técnicas apropriadas de balanceamento e construir um pipeline de classificação confiável e bem justificado.
 
 **Pontos-chave:**
 
