@@ -1,109 +1,121 @@
-# Estudos Ciência de Dados
+# 📚 Estudos em Ciência de Dados
 
-Repositório dos meus estudos em Ciência de Dados, com foco em **análise crítica**, **limpeza de dados** e **modelagem supervisionada** com interpretação estatística.
+Repositório dos meus estudos em **Ciência de Dados**, com foco em:
 
-## Projetos
+- 🧼 Limpeza e pré-processamento de dados
+- 📊 Análise exploratória e interpretação estatística
+- 🤖 Modelos supervisionados com raciocínio crítico
+- 🧠 Aprendizado a partir de erros e validações
 
 ---
 
-### Projeto 01: Classificação da Performance de Estudantes — Limpeza, Análise e Balanceamento  
-**🔗 Link para o notebook → [projeto1.ipynb](projeto1.ipynb)**
+## ⚡ Visão Geral dos Projetos
 
-Projeto de classificação baseado em dados educacionais (idade, etnia, faltas, etc.), com forte ênfase em preparação de dados e decisões fundamentadas. Pois sem o pré-processamento correto, um aspecto *indesejado* teria enviesado a análise e o treinamento do modelo desde o início.
+### ✅ Projeto 01: Classificação da Performance de Estudantes  
+📌 **Classificação supervisionada com foco em limpeza de dados e correção de erro crítico no dataset original.**  
+Corrigi manualmente os rótulos da variável alvo, que estavam errados no próprio Kaggle, usei SMOTE de forma segura (após o split) e obtive **96% de acurácia e F1-score macro de 0.96**, com desempenho equilibrado nas classes.
 
-> O projeto melhorou minha capacidade de identificar falhas na estrutura do dataset, como valores inconsistentes nas colunas, aplicar técnicas apropriadas de balanceamento e construir um pipeline de classificação confiável e bem justificado.
+### 🚨 Projeto 02: Previsão de Churn com Testes Estatísticos e Rede Neural  
+📌 **Combinação de estatística inferencial com machine learning supervisionado.**  
+Usei testes como Qui-quadrado, Mann-Whitney e Kruskal-Wallis para validar hipóteses de negócio antes de treinar uma MLP. O projeto mostra capacidade de transformar dados em decisões orientadas e interpretáveis.
 
-**Pontos-chave:**
+### 🏙️ Projeto 03: Previsão de Preço de Aluguel com Regressão Linear e Classificação  
+📌 **Análise de impacto de variáveis reais (área, garagem, distância do centro) sobre o preço de aluguel.**  
+O modelo atingiu **R² de 0.82** e gerou coeficientes interpretáveis. Também classifiquei se o imóvel está "caro ou barato", com **84% de acurácia** e insights práticos para melhorar a performance.
 
-- **Correção da variável alvo:** A coluna `GradeClass`, que representa faixas de GPA, apresentava classificações incorretas — alunos com nota abaixo de 3.5 estavam rotulados como se tivessem nota acima. Refiz a segmentação com base no GPA real. Sem essa correção, a análise e o modelo estariam enviesados desde o início.
-- **Desbalanceamento identificado:** Diversas colunas apresentavam forte desequilíbrio entre as classes, tanto nas variáveis preditoras quanto na variável alvo.
-- **Uso de SMOTE:** Após análise da distribuição, utilizei SMOTE para balancear as classes da variável alvo, garantindo que o modelo não fosse tendencioso. A técnica foi aplicada **após o split de treino e teste**, evitando vazamento de dados.
+---
 
-**Resultados:**
+## 📁 Projetos Detalhados
+
+---
+
+### 🧪 Projeto 01: Classificação da Performance de Estudantes  
+🔗 **[Notebook → projeto1.ipynb](projeto1.ipynb)**
+
+> Classificação baseada em dados educacionais (idade, etnia, faltas, etc.), com foco em decisões bem fundamentadas desde o pré-processamento.
+
+**🌟 Destaques:**
+
+- Corrigi um **erro do dataset original** na coluna `GradeClass`, que estava rotulando mal os alunos com GPA baixo.
+- Identifiquei desbalanceamento severo e usei **SMOTE com segurança**, após o split, evitando vazamento.
+- Construí pipeline robusto com foco em evitar enviesamentos.
+
+**📊 Resultados:**
 
 - **Acurácia:** 96%
 - **F1-score (macro):** 0.96
-- **Desempenho estável** em todas as classes, mesmo com dados originalmente desbalanceados.
+- **Desempenho estável** mesmo com dados desbalanceados
 
 ---
 
-### Projeto 02: Previsão de Churn com EDA, Testes Estatísticos e Rede Neural (MLP)  
-**🔗 Link para o notebook → [projeto2.ipynb](projeto2.ipynb)**
+### 🧠 Projeto 02: Previsão de Churn com EDA, Testes Estatísticos e Rede Neural  
+🔗 **[Notebook → projeto2.ipynb](projeto2.ipynb)**
 
-Desenvolvi um modelo preditivo para identificar clientes com maior risco de **churn**, integrando **análise exploratória**, **testes estatísticos de hipóteses** e uma **rede neural MLP**.
+> Predição de churn integrando **estatística inferencial** com **redes neurais**, garantindo não só performance, mas **interpretação e confiança nos dados**.
 
-O projeto evidenciou raciocínio analítico ao combinar **validação estatística de hipóteses de negócio** com técnicas de **machine learning supervisionado**, garantindo uma abordagem robusta e interpretável.
+**🔬 Testes de hipóteses aplicados:**
 
-#### 🔍 Principais insights e hipóteses validadas:
+- Qui-quadrado → 📌 Gênero influencia no churn
+- Mann-Whitney → 📌 Salário **não** tem impacto significativo
+- Kruskal-Wallis → 📌 Nº de produtos tem relação não-linear com churn
 
-* **Gênero:** mulheres têm 1.5x mais chance de churn (*Teste do Qui-Quadrado*).
-* **Salário:** sem influência estatística significativa (*Teste de Mann-Whitney*).
-* **Número de produtos:** relação não-linear com churn (*Teste de Kruskal-Wallis*).
-* Dados desbalanceados tratados com **SMOTE**, aplicado após o *split* para evitar vazamento de informação.
+**🤖 Modelagem com MLP:**
 
-#### 🧠 Modelagem com Rede Neural MLP:
+- Perceptron multicamadas com ReLU e saída Sigmoid
+- Otimizador **Adam**, função de perda **Binary Crossentropy**
+- Dados normalizados e balanceados com SMOTE
 
-* Arquitetura: Perceptron multicamadas com ReLU e saída sigmoid
-* Normalização dos dados e função de custo: *Binary Crossentropy*
-* Otimizador: **Adam**
+**📈 Resultados:**
 
-**Métricas de desempenho:**
+- **Acurácia:** 82%
+- **F1-Score:** 59%
+- **Recall:** 67%
+- **Precision:** 54%
 
-* **Acurácia:** 82%
-* **F1-Score:** 59%
-* **Recall:** 67% (captura da maioria dos churns reais)
-* **Precision:** 54% (alguns falsos positivos)
+**💡 Insights práticos:**
 
-#### 💡 Fatores de churn identificados:
-
-* **Idade > 40:** risco 2x maior
-* **Clientes da Alemanha:** 32% de churn (vs. 16% na França)
-* **Clientes inativos:** churn de 27% (vs. 15% dos ativos)
-* **Saldo alto (> €100 mil):** maior propensão a sair
-
-#### 🚀 Próximos passos:
-
-* Ajustar o **threshold de decisão** para reduzir falsos negativos
-* Testar arquiteturas mais profundas e regularização para melhorar generalização
+- Idade > 40 aumenta risco 2x
+- Clientes da Alemanha têm maior taxa de churn
+- Clientes inativos e com saldo alto saem mais
 
 ---
 
-### Projeto 03: Previsão de Aluguel de Imóveis com Regressão Linear e Classificação de Preço  
-**🔗 Link para o notebook → [projeto3.ipynb](projeto3.ipynb)**
+### 🏠 Projeto 03: Previsão de Aluguel com Regressão Linear e Classificação  
+🔗 **[Notebook → projeto3.ipynb](projeto3.ipynb)**
 
-Este notebook realiza EDA e modelagem preditiva com **Regressão Linear**, estimando o preço de aluguel de apartamentos com base em características como área, quartos, banheiros, garagem e distância do centro. Também classifica se o imóvel está **caro ou barato** em comparação com outros similares.
+> Estimativa do valor de aluguel de apartamentos e classificação como **caro ou barato** baseado em dados reais de área, quartos, banheiros, garagem e localização.
 
-#### 📌 EDA — Principais insights:
+**🔍 EDA — principais descobertas:**
 
-* **Área (m²)** e **distância do centro (km)** são os principais fatores.
-* A área tem correlação **positiva** com o preço; distância, **negativa**.
-* O modelo aprende coeficientes coerentes com a realidade.
+- **Área (m²)** tem forte impacto positivo no preço  
+- **Distância do centro** tem impacto negativo  
+- Modelo revela coeficientes intuitivos e úteis
 
-#### 🔢 Resultados do modelo de regressão:
+**📉 Regressão Linear — Resultados:**
 
-* **MAE:** R$158,61 (erro médio)
-* **R² Score:** 0.82 (modelo explica 82% da variação do preço)
-* **Coeficientes principais:**
-  - +R$24,03 por m²
-  - +R$123,95 por quarto
-  - +R$101,11 por banheiro
-  - +R$196,86 se tiver garagem
-  - –R$51,10 por km distante do centro
+- **MAE:** R$158,61
+- **R² Score:** 0.82
+- **Coeficientes:**
+  - +R$24,03/m²
+  - +R$123,95/quarto
+  - +R$101,11/banheiro
+  - +R$196,86 com garagem
+  - –R$51,10/km de distância do centro
 
-#### 🔍 Classificação de preço (caro ou barato):
+**📊 Classificação: Caro ou Barato**
 
-* **Acurácia:** 84%
-* **Precisão:** 87%
-* **Recall:** 83%
-* 18 falsos negativos (classificou imóveis caros como baratos)
+- **Acurácia:** 84%
+- **Precisão:** 87%
+- **Recall:** 83%
+- ⚠️ 18 falsos negativos — imóveis caros classificados como baratos
 
-#### 🛠️ Possíveis melhorias:
+**🚧 Melhorias sugeridas:**
 
-* Engenharia de atributos
-* Remoção de outliers
-* Teste com modelos como **Random Forest**, **SVM** ou **Gradient Boosting**
-* Ajuste de hiperparâmetros e balanceamento de classes
+- Engenharia de atributos
+- Remoção de outliers
+- Testes com modelos mais robustos (Random Forest, SVM, Gradient Boosting)
 
 ---
 
-Mais projetos serão adicionados em breve, abordando problemas reais com foco em análise de dados, validação estatística e aplicação prática de modelos preditivos e redes neurais.
+📌 *Mais projetos serão adicionados em breve, com foco em desafios reais, validação estatística e soluções de alto valor analítico.*
+
