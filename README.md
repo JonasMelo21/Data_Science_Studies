@@ -27,15 +27,12 @@ Projeto de classificação baseado em dados educacionais (idade, etnia, faltas, 
 
 ---
 
-### Projeto 02: Previsão de Churn com EDA, Testes Estatísticos e Rede Neural (MLP)
-
-🔗 **[Notebook do Projeto](projeto2.ipynb)**
+### Projeto 02: Previsão de Churn com EDA, Testes Estatísticos e Rede Neural (MLP)  
+**🔗 Link para o notebook → [projeto2.ipynb](projeto2.ipynb)**
 
 Desenvolvi um modelo preditivo para identificar clientes com maior risco de **churn**, integrando **análise exploratória**, **testes estatísticos de hipóteses** e uma **rede neural MLP**.
 
 O projeto evidenciou raciocínio analítico ao combinar **validação estatística de hipóteses de negócio** com técnicas de **machine learning supervisionado**, garantindo uma abordagem robusta e interpretável.
-
----
 
 #### 🔍 Principais insights e hipóteses validadas:
 
@@ -43,8 +40,6 @@ O projeto evidenciou raciocínio analítico ao combinar **validação estatísti
 * **Salário:** sem influência estatística significativa (*Teste de Mann-Whitney*).
 * **Número de produtos:** relação não-linear com churn (*Teste de Kruskal-Wallis*).
 * Dados desbalanceados tratados com **SMOTE**, aplicado após o *split* para evitar vazamento de informação.
-
----
 
 #### 🧠 Modelagem com Rede Neural MLP:
 
@@ -59,8 +54,6 @@ O projeto evidenciou raciocínio analítico ao combinar **validação estatísti
 * **Recall:** 67% (captura da maioria dos churns reais)
 * **Precision:** 54% (alguns falsos positivos)
 
----
-
 #### 💡 Fatores de churn identificados:
 
 * **Idade > 40:** risco 2x maior
@@ -68,12 +61,48 @@ O projeto evidenciou raciocínio analítico ao combinar **validação estatísti
 * **Clientes inativos:** churn de 27% (vs. 15% dos ativos)
 * **Saldo alto (> €100 mil):** maior propensão a sair
 
----
-
 #### 🚀 Próximos passos:
 
 * Ajustar o **threshold de decisão** para reduzir falsos negativos
 * Testar arquiteturas mais profundas e regularização para melhorar generalização
+
+---
+
+### Projeto 03: Previsão de Aluguel de Imóveis com Regressão Linear e Classificação de Preço  
+**🔗 Link para o notebook → [projeto3.ipynb](projeto3.ipynb)**
+
+Este notebook realiza EDA e modelagem preditiva com **Regressão Linear**, estimando o preço de aluguel de apartamentos com base em características como área, quartos, banheiros, garagem e distância do centro. Também classifica se o imóvel está **caro ou barato** em comparação com outros similares.
+
+#### 📌 EDA — Principais insights:
+
+* **Área (m²)** e **distância do centro (km)** são os principais fatores.
+* A área tem correlação **positiva** com o preço; distância, **negativa**.
+* O modelo aprende coeficientes coerentes com a realidade.
+
+#### 🔢 Resultados do modelo de regressão:
+
+* **MAE:** R$158,61 (erro médio)
+* **R² Score:** 0.82 (modelo explica 82% da variação do preço)
+* **Coeficientes principais:**
+  - +R$24,03 por m²
+  - +R$123,95 por quarto
+  - +R$101,11 por banheiro
+  - +R$196,86 se tiver garagem
+  - –R$51,10 por km distante do centro
+
+#### 🔍 Classificação de preço (caro ou barato):
+
+* **Acurácia:** 84%
+* **Precisão:** 87%
+* **Recall:** 83%
+* 18 falsos negativos (classificou imóveis caros como baratos)
+
+#### 🛠️ Possíveis melhorias:
+
+* Engenharia de atributos
+* Remoção de outliers
+* Teste com modelos como **Random Forest**, **SVM** ou **Gradient Boosting**
+* Ajuste de hiperparâmetros e balanceamento de classes
 
 ---
 
