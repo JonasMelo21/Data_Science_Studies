@@ -27,50 +27,53 @@ Projeto de classificação baseado em dados educacionais (idade, etnia, faltas, 
 
 ---
 
-### Projeto 02: Previsão de Churn com EDA, Testes Estatísticos e Rede Neural Multicamadas (MLP)  
-**🔗 Link para o notebook → [projeto2.ipynb](projeto2.ipynb)**
+### Projeto 02: Previsão de Churn com EDA, Testes Estatísticos e Rede Neural (MLP)
 
-Neste projeto, desenvolvi uma **rede neural perceptron multicamadas (MLP)** para prever **quais clientes têm maior probabilidade de deixar a empresa (churn)** com base em dados demográficos e comportamentais. O projeto integrou **análise exploratória detalhada**, **testes estatísticos de hipóteses**, **balanceamento de dados com SMOTE** e a construção de um pipeline robusto com redes neurais.
+🔗 **[Notebook do Projeto](projeto2.ipynb)**
 
-> Essa experiência me permitiu integrar métodos estatísticos com redes neurais, validando hipóteses de negócio com testes clássicos e depois transformando os dados em insights para uma arquitetura de aprendizado profundo.
+Desenvolvi um modelo preditivo para identificar clientes com maior risco de **churn**, integrando **análise exploratória**, **testes estatísticos de hipóteses** e uma **rede neural MLP**.
 
-**Hipóteses testadas e validadas:**
+O projeto evidenciou raciocínio analítico ao combinar **validação estatística de hipóteses de negócio** com técnicas de **machine learning supervisionado**, garantindo uma abordagem robusta e interpretável.
 
-- **Mulheres apresentam 1.5x mais churn** que os homens (🔎 Teste do Qui-Quadrado).
-- **Salário não tem influência estatística significativa** no churn (🔎 Teste de Mann-Whitney).
-- **Número de produtos influencia o churn de forma não-linear** (🔎 Teste de Kruskal-Wallis).
-- Identificação de variáveis com **classes desbalanceadas**, tratadas com **SMOTE** após o split.
+---
 
-**Modelagem:**
+#### 🔍 Principais insights e hipóteses validadas:
 
-- Rede neural **Multilayer Perceptron (MLP)** com função de ativação ReLU e saída sigmoid.
-- Dados normalizados e balanceados.
-- Função de custo: Binary Crossentropy  
-- Otimizador: Adam
+* **Gênero:** mulheres têm 1.5x mais chance de churn (*Teste do Qui-Quadrado*).
+* **Salário:** sem influência estatística significativa (*Teste de Mann-Whitney*).
+* **Número de produtos:** relação não-linear com churn (*Teste de Kruskal-Wallis*).
+* Dados desbalanceados tratados com **SMOTE**, aplicado após o *split* para evitar vazamento de informação.
 
-**Resultados do modelo:**
+---
 
-- **Acurácia:** 82%
-- **F1-Score:** 59%
-- **Precision:** 54% — presença de falsos positivos (clientes previstos como churn, mas que não saíram).
-- **Recall:** 67% — o modelo capturou 67% dos churns reais.
+#### 🧠 Modelagem com Rede Neural MLP:
 
-**Erros principais:**
+* Arquitetura: Perceptron multicamadas com ReLU e saída sigmoid
+* Normalização dos dados e função de custo: *Binary Crossentropy*
+* Otimizador: **Adam**
 
-- **226 falsos positivos:** clientes que ficaram, mas foram classificados como churn.
-- **131 falsos negativos:** clientes que saíram, mas não foram detectados.
+**Métricas de desempenho:**
 
-**Fatores relevantes para churn identificados na análise:**
+* **Acurácia:** 82%
+* **F1-Score:** 59%
+* **Recall:** 67% (captura da maioria dos churns reais)
+* **Precision:** 54% (alguns falsos positivos)
 
-- **Idade > 40 anos:** risco 2x maior de churn.
-- **Clientes da Alemanha:** taxa de churn de 32% (vs. 16% na França).
-- **Clientes inativos (`IsActiveMember=0`)**: 27% de churn (vs. 15% entre os ativos).
-- **Saldo elevado (> €100 mil):** mais propensos a sair.
+---
 
-**Possibilidade de melhoria:**
+#### 💡 Fatores de churn identificados:
 
-- Ajustar o **limiar de decisão (threshold)** da MLP para melhorar o recall e reduzir os falsos negativos.
-- Explorar regularização ou arquiteturas mais profundas para maior capacidade de generalização.
+* **Idade > 40:** risco 2x maior
+* **Clientes da Alemanha:** 32% de churn (vs. 16% na França)
+* **Clientes inativos:** churn de 27% (vs. 15% dos ativos)
+* **Saldo alto (> €100 mil):** maior propensão a sair
+
+---
+
+#### 🚀 Próximos passos:
+
+* Ajustar o **threshold de decisão** para reduzir falsos negativos
+* Testar arquiteturas mais profundas e regularização para melhorar generalização
 
 ---
 
