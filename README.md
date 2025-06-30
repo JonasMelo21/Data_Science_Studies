@@ -1,5 +1,5 @@
 
-# Data_Science_Studies
+# Estudos Ciência de Dados
 
 Repositório dos meus estudos em Ciência de Dados, com foco em análise crítica, limpeza de dados e modelagem.
 
