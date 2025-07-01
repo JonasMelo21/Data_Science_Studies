@@ -9,19 +9,32 @@ Repositório dos meus estudos em **Ciência de Dados**, com foco em:
 
 ---
 
+## 📌 Sumário
+
+- [⚡ Visão Geral dos Projetos](#-visão-geral-dos-projetos)
+  - [✅ Projeto 01: Classificação da Performance de Estudantes](#-projeto-01-classificação-da-performance-de-estudantes)
+  - [🚨 Projeto 02: Previsão de Churn com Testes Estatísticos e Rede Neural](#-projeto-02-previsão-de-churn-com-eda-testes-estatísticos-e-rede-neural)
+  - [🏙️ Projeto 03: Previsão de Preço de Aluguel com Regressão Linear e Classificação](#-projeto-03-previsão-de-aluguel-com-regressão-linear-e-classificação)
+- [📁 Projetos Detalhados](#-projetos-detalhados)
+
+---
+
 ## ⚡ Visão Geral dos Projetos
 
-### ✅ Projeto 01: Classificação da Performance de Estudantes  
+### ✅ [Projeto 01: Classificação da Performance de Estudantes](#-projeto-01-classificação-da-performance-de-estudantes)  
 📌 **Classificação supervisionada com foco em limpeza de dados e correção de erro crítico no dataset original.**  
-Corrigi manualmente os rótulos da variável alvo, que estavam errados no próprio Kaggle, usei SMOTE de forma segura (após o split) e obtive **96% de acurácia e F1-score macro de 0.96**, com desempenho equilibrado nas classes.
+Corrigi manualmente os rótulos da variável alvo, que estavam errados no próprio Kaggle, usei SMOTE de forma segura (após o split) e obtive **96% de acurácia e F1-score macro de 0.96**, com desempenho equilibrado nas classes.  
+🔗 **[Notebook → projeto1.ipynb](projeto1.ipynb)**
 
-### 🚨 Projeto 02: Previsão de Churn com Testes Estatísticos e Rede Neural  
+### 🚨 [Projeto 02: Previsão de Churn com Testes Estatísticos e Rede Neural](#-projeto-02-previsão-de-churn-com-eda-testes-estatísticos-e-rede-neural)  
 📌 **Combinação de estatística inferencial com machine learning supervisionado.**  
-Usei testes como Qui-quadrado, Mann-Whitney e Kruskal-Wallis para validar hipóteses de negócio antes de treinar uma MLP. O projeto mostra capacidade de transformar dados em decisões orientadas e interpretáveis.
+Usei testes como Qui-quadrado, Mann-Whitney e Kruskal-Wallis para validar hipóteses de negócio antes de treinar uma MLP. O projeto mostra capacidade de transformar dados em decisões orientadas e interpretáveis.  
+🔗 **[Notebook → projeto2.ipynb](projeto2.ipynb)**
 
-### 🏙️ Projeto 03: Previsão de Preço de Aluguel com Regressão Linear e Classificação  
+### 🏙️ [Projeto 03: Previsão de Preço de Aluguel com Regressão Linear e Classificação](#-projeto-03-previsão-de-aluguel-com-regressão-linear-e-classificação)  
 📌 **Análise de impacto de variáveis reais (área, garagem, distância do centro) sobre o preço de aluguel.**  
-O modelo atingiu **R² de 0.82** e gerou coeficientes interpretáveis. Também classifiquei se o imóvel está "caro ou barato", com **84% de acurácia** e insights práticos para melhorar a performance.
+O modelo atingiu **R² de 0.82** e gerou coeficientes interpretáveis. Também classifiquei se o imóvel está "caro ou barato", com **84% de acurácia** e insights práticos para melhorar a performance.  
+🔗 **[Notebook → projeto3.ipynb](projeto3.ipynb)**
 
 ---
 
@@ -118,4 +131,3 @@ O modelo atingiu **R² de 0.82** e gerou coeficientes interpretáveis. Também c
 ---
 
 📌 *Mais projetos serão adicionados em breve, com foco em desafios reais, validação estatística e soluções de alto valor analítico.*
-
