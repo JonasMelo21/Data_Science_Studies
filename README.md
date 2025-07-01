@@ -1,7 +1,7 @@
 # 🧠 Data Science Studies
 
-📝 *This README is available in English and Portuguese. Scroll down for the PT-BR version.*  
-📝 *Este README está disponível em inglês e português. Role para baixo para a versão em português.*
+📝 *This README is available in English and Portuguese.*  
+📌 [Click here to read in Portuguese.](#-estudos-em-ciência-de-dados)
 
 ---
 
@@ -40,8 +40,6 @@ Achieved **R² of 0.82** and classified listings as "cheap or expensive" with **
 ---
 
 ## 📁 Detailed Projects
-
----
 
 ### 🧪 Project 01: Student Performance Classification  
 🔗 **[Notebook → projeto1.ipynb](projeto1.ipynb)**
@@ -131,11 +129,9 @@ Achieved **R² of 0.82** and classified listings as "cheap or expensive" with **
 
 ---
 
-📌 *More projects coming soon, with real-world challenges, statistical rigor, and clear business value.*
-
----
-
 # 🇧🇷 Estudos em Ciência de Dados
+
+📌 [Clique aqui para voltar ao topo em inglês.](#-data-science-studies)
 
 ---
 
@@ -174,8 +170,6 @@ Obtive **R² de 0.82** e classifiquei os imóveis como “caros ou baratos” co
 ---
 
 ## 📁 Projetos Detalhados
-
----
 
 ### 🧪 Projeto 01: Classificação da Performance de Estudantes  
 🔗 **[Notebook → projeto1.ipynb](projeto1.ipynb)**
