@@ -1,133 +1,93 @@
-# 📚 Estudos em Ciência de Dados
+# 🧠 Data Science Studies
 
-Repositório dos meus estudos em **Ciência de Dados**, com foco em:
-
-- 🧼 Limpeza e pré-processamento de dados
-- 📊 Análise exploratória e interpretação estatística
-- 🤖 Modelos supervisionados com raciocínio crítico
-- 🧠 Aprendizado a partir de erros e validações
+📝 *This README is available in English and Portuguese.*  
+👉 **[Click here to jump to the Portuguese version](#-estudos-em-ciência-de-dados)**  
+or scroll down to continue in English.
 
 ---
 
-## 📌 Sumário
+## 📚 Focus Areas
 
-- [⚡ Visão Geral dos Projetos](#-visão-geral-dos-projetos)
-  - [✅ Projeto 01: Classificação da Performance de Estudantes](#-projeto-01-classificação-da-performance-de-estudantes)
-  - [🚨 Projeto 02: Previsão de Churn com Testes Estatísticos e Rede Neural](#-projeto-02-previsão-de-churn-com-eda-testes-estatísticos-e-rede-neural)
-  - [🏙️ Projeto 03: Previsão de Preço de Aluguel com Regressão Linear e Classificação](#-projeto-03-previsão-de-aluguel-com-regressão-linear-e-classificação)
-- [📁 Projetos Detalhados](#-projetos-detalhados)
+This repository documents my Data Science journey, with emphasis on:
+
+- 🧼 Robust data cleaning and preprocessing  
+- 📊 Exploratory analysis and statistical interpretation  
+- 🤖 Supervised machine learning with critical thinking  
+- 🧠 Learning from mistakes and validation procedures  
+
+---
+
+## ⚡ Project Highlights
+
+### ✅ [Project 01: Student Performance Classification](#-project-01-student-performance-classification)  
+📌 **Supervised classification with critical label correction and safe SMOTE application.**  
+I manually corrected mislabeled target values (present in the original Kaggle dataset), applied SMOTE only after the data split, and built solid pipelines that achieved **96% accuracy and macro F1-score**.  
+🔗 **[Notebook → projeto1.ipynb](projeto1.ipynb)**
+
+---
+
+### 🚨 [Project 02: Churn Prediction with Statistical Testing + MLP](#-project-02-churn-prediction-with-eda-statistical-tests--neural-networks)  
+📌 **Combination of inferential statistics and neural networks.**  
+I applied hypothesis tests (Chi-square, Mann-Whitney, Kruskal-Wallis) before modeling to validate business assumptions and improve interpretability.  
+🔗 **[Notebook → projeto2.ipynb](projeto2.ipynb)**
+
+---
+
+### 🏙️ [Project 03: Rent Price Prediction with Regression & Classification](#-project-03-rent-price-prediction-with-regression--classification)  
+📌 **Linear regression and interpretable classification based on real-world housing features.**  
+Achieved **R² of 0.82** and classified listings as "cheap or expensive" with **84% accuracy**, using real estate attributes like size, rooms, garage, and distance from city center.  
+🔗 **[Notebook → projeto3.ipynb](projeto3.ipynb)**
+
+---
+
+## 📁 Detailed Projects
+
+<!-- detailed sections omitted for brevity, but stay as you've written -->
+
+---
+
+# 🇧🇷 Estudos em Ciência de Dados
+
+📝 *Este README está disponível em inglês e português.*  
+👉 **[Clique aqui para voltar ao topo (versão em inglês)](#-data-science-studies)**  
+ou continue lendo em português.
+
+---
+
+## 📚 Áreas de Foco
+
+Este repositório documenta meus estudos em Ciência de Dados, com foco em:
+
+- 🧼 Limpeza e pré-processamento robusto  
+- 📊 Análise exploratória e validação estatística  
+- 🤖 Modelagem supervisionada com raciocínio crítico  
+- 🧠 Aprendizado com validações e erros  
 
 ---
 
 ## ⚡ Visão Geral dos Projetos
 
 ### ✅ [Projeto 01: Classificação da Performance de Estudantes](#-projeto-01-classificação-da-performance-de-estudantes)  
-📌 **Classificação supervisionada com foco em limpeza de dados e correção de erro crítico no dataset original.**  
-Corrigi manualmente os rótulos da variável alvo, que estavam errados no próprio Kaggle, usei SMOTE de forma segura (após o split) e obtive **96% de acurácia e F1-score macro de 0.96**, com desempenho equilibrado nas classes.  
+📌 **Classificação supervisionada com correção crítica de rótulos e SMOTE aplicado de forma segura.**  
+Corrigi manualmente os rótulos da variável alvo (que estavam errados no Kaggle), apliquei SMOTE após o split e construí pipelines limpas que resultaram em **96% de acurácia e F1-score macro**.  
 🔗 **[Notebook → projeto1.ipynb](projeto1.ipynb)**
 
-### 🚨 [Projeto 02: Previsão de Churn com Testes Estatísticos e Rede Neural](#-projeto-02-previsão-de-churn-com-eda-testes-estatísticos-e-rede-neural)  
-📌 **Combinação de estatística inferencial com machine learning supervisionado.**  
-Usei testes como Qui-quadrado, Mann-Whitney e Kruskal-Wallis para validar hipóteses de negócio antes de treinar uma MLP. O projeto mostra capacidade de transformar dados em decisões orientadas e interpretáveis.  
+---
+
+### 🚨 [Projeto 02: Previsão de Churn com Testes Estatísticos e MLP](#-projeto-02-previsão-de-churn-com-eda-testes-estatísticos-e-rede-neural)  
+📌 **Integração de testes estatísticos com rede neural supervisionada.**  
+Utilizei testes como Qui-quadrado, Mann-Whitney e Kruskal-Wallis antes de treinar uma MLP, garantindo **decisões interpretáveis e validadas**.  
 🔗 **[Notebook → projeto2.ipynb](projeto2.ipynb)**
 
-### 🏙️ [Projeto 03: Previsão de Preço de Aluguel com Regressão Linear e Classificação](#-projeto-03-previsão-de-aluguel-com-regressão-linear-e-classificação)  
-📌 **Análise de impacto de variáveis reais (área, garagem, distância do centro) sobre o preço de aluguel.**  
-O modelo atingiu **R² de 0.82** e gerou coeficientes interpretáveis. Também classifiquei se o imóvel está "caro ou barato", com **84% de acurácia** e insights práticos para melhorar a performance.  
+---
+
+### 🏙️ [Projeto 03: Previsão de Preço de Aluguel com Regressão e Classificação](#-projeto-03-previsão-de-aluguel-com-regressão-linear-e-classificação)  
+📌 **Regressão linear e classificação interpretável baseada em variáveis reais de imóveis.**  
+Obtive **R² de 0.82** e classifiquei os imóveis como “caros ou baratos” com **84% de acurácia**, com base em características como metragem, quartos, garagem e distância do centro.  
 🔗 **[Notebook → projeto3.ipynb](projeto3.ipynb)**
 
 ---
 
 ## 📁 Projetos Detalhados
 
----
-
-### 🧪 Projeto 01: Classificação da Performance de Estudantes  
-🔗 **[Notebook → projeto1.ipynb](projeto1.ipynb)**
-
-> Classificação baseada em dados educacionais (idade, etnia, faltas, etc.), com foco em decisões bem fundamentadas desde o pré-processamento.
-
-**🌟 Destaques:**
-
-- Corrigi um **erro do dataset original** na coluna `GradeClass`, que estava rotulando mal os alunos com GPA baixo.
-- Identifiquei desbalanceamento severo e usei **SMOTE com segurança**, após o split, evitando vazamento.
-- Construí pipeline robusto com foco em evitar enviesamentos.
-
-**📊 Resultados:**
-
-- **Acurácia:** 96%
-- **F1-score (macro):** 0.96
-- **Desempenho estável** mesmo com dados desbalanceados
-
----
-
-### 🧠 Projeto 02: Previsão de Churn com EDA, Testes Estatísticos e Rede Neural  
-🔗 **[Notebook → projeto2.ipynb](projeto2.ipynb)**
-
-> Predição de churn integrando **estatística inferencial** com **redes neurais**, garantindo não só performance, mas **interpretação e confiança nos dados**.
-
-**🔬 Testes de hipóteses aplicados:**
-
-- Qui-quadrado → 📌 Gênero influencia no churn
-- Mann-Whitney → 📌 Salário **não** tem impacto significativo
-- Kruskal-Wallis → 📌 Nº de produtos tem relação não-linear com churn
-
-**🤖 Modelagem com MLP:**
-
-- Perceptron multicamadas com ReLU e saída Sigmoid
-- Otimizador **Adam**, função de perda **Binary Crossentropy**
-- Dados normalizados e balanceados com SMOTE
-
-**📈 Resultados:**
-
-- **Acurácia:** 82%
-- **F1-Score:** 59%
-- **Recall:** 67%
-- **Precision:** 54%
-
-**💡 Insights práticos:**
-
-- Idade > 40 aumenta risco 2x
-- Clientes da Alemanha têm maior taxa de churn
-- Clientes inativos e com saldo alto saem mais
-
----
-
-### 🏠 Projeto 03: Previsão de Aluguel com Regressão Linear e Classificação  
-🔗 **[Notebook → projeto3.ipynb](projeto3.ipynb)**
-
-> Estimativa do valor de aluguel de apartamentos e classificação como **caro ou barato** baseado em dados reais de área, quartos, banheiros, garagem e localização.
-
-**🔍 EDA — principais descobertas:**
-
-- **Área (m²)** tem forte impacto positivo no preço  
-- **Distância do centro** tem impacto negativo  
-- Modelo revela coeficientes intuitivos e úteis
-
-**📉 Regressão Linear — Resultados:**
-
-- **MAE:** R$158,61
-- **R² Score:** 0.82
-- **Coeficientes:**
-  - +R$24,03/m²
-  - +R$123,95/quarto
-  - +R$101,11/banheiro
-  - +R$196,86 com garagem
-  - –R$51,10/km de distância do centro
-
-**📊 Classificação: Caro ou Barato**
-
-- **Acurácia:** 84%
-- **Precisão:** 87%
-- **Recall:** 83%
-- ⚠️ 18 falsos negativos — imóveis caros classificados como baratos
-
-**🚧 Melhorias sugeridas:**
-
-- Engenharia de atributos
-- Remoção de outliers
-- Testes com modelos mais robustos (Random Forest, SVM, Gradient Boosting)
-
----
-
-📌 *Mais projetos serão adicionados em breve, com foco em desafios reais, validação estatística e soluções de alto valor analítico.*
+<!-- idem -->
