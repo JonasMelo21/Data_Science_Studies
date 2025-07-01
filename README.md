@@ -18,7 +18,7 @@ This repository documents my Data Science journey, with emphasis on:
 
 ## ⚡ Project Highlights
 
-### ✅ [Project 01: Student Performance Classification](#-project-01-student-performance-classification)  
+### ✅ [Project 01: Student Performance Classification](#project-01-student-performance-classification)  
 📌 **Supervised classification with critical label correction and safe SMOTE application.**  
 I manually corrected mislabeled target values (present in the original Kaggle dataset), applied SMOTE only after the data split, and built solid pipelines that achieved **96% accuracy and macro F1-score**.  
 🔗 **[Notebook → projeto1.ipynb](projeto1.ipynb)**
