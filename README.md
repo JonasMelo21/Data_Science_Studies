@@ -88,6 +88,97 @@ Obtive **R² de 0.82** e classifiquei os imóveis como “caros ou baratos” co
 
 ---
 
+
 ## 📁 Projetos Detalhados
 
-<!-- idem -->
+---
+
+### 🧪 Projeto 01: Classificação da Performance de Estudantes  
+🔗 **[Notebook → projeto1.ipynb](projeto1.ipynb)**
+
+> Classificação baseada em dados educacionais (idade, etnia, faltas, etc.), com foco em decisões bem fundamentadas desde o pré-processamento.
+
+**🌟 Destaques:**
+
+- Corrigi um **erro do dataset original** na coluna `GradeClass`, que rotulava mal alunos com GPA baixo  
+- Usei **SMOTE com segurança**, após o split, evitando vazamento  
+- Construi pipeline robusto e interpretável
+
+**📊 Resultados:**
+
+- **Acurácia:** 96%  
+- **F1-score (macro):** 0.96  
+- Estabilidade mesmo com dados desbalanceados
+
+---
+
+### 🧠 Projeto 02: Previsão de Churn com EDA, Testes Estatísticos e Rede Neural  
+🔗 **[Notebook → projeto2.ipynb](projeto2.ipynb)**
+
+> Predição de churn usando inferência estatística e MLP com foco em **confiabilidade e explicabilidade**.
+
+**🔬 Testes aplicados:**
+
+- Qui-quadrado → 📌 Gênero influencia no churn  
+- Mann-Whitney → 📌 Salário **não** tem impacto significativo  
+- Kruskal-Wallis → 📌 Número de produtos tem relação com churn
+
+**🤖 Modelagem:**
+
+- MLP com ReLU e saída Sigmoid  
+- Otimizador Adam, Binary Crossentropy  
+- SMOTE + normalização dos dados
+
+**📈 Resultados:**
+
+- **Acurácia:** 82%  
+- **F1-score:** 59%  
+- **Recall:** 67%  
+- **Precisão:** 54%
+
+**💡 Insights práticos:**
+
+- Idade > 40 dobra o risco de churn  
+- Clientes da Alemanha saem mais  
+- Clientes inativos com saldo alto têm maior chance de sair
+
+---
+
+### 🏠 Projeto 03: Previsão de Aluguel com Regressão Linear e Classificação  
+🔗 **[Notebook → projeto3.ipynb](projeto3.ipynb)**
+
+> Estimativa do preço do aluguel e classificação de imóveis como **caros ou baratos**.
+
+**🔍 Descobertas da EDA:**
+
+- Área do imóvel impacta positivamente  
+- Distância do centro impacta negativamente  
+- Coeficientes intuitivos e úteis
+
+**📉 Resultados da Regressão:**
+
+- **MAE:** R$158,61  
+- **R²:** 0.82  
+- **Coeficientes:**
+  - +R$24,03/m²  
+  - +R$123,95/quarto  
+  - +R$101,11/banheiro  
+  - +R$196,86 com garagem  
+  - –R$51,10/km do centro
+
+**📊 Resultados da Classificação:**
+
+- **Acurácia:** 84%  
+- **Precisão:** 87%  
+- **Recall:** 83%  
+- ⚠️ 18 falsos negativos → imóveis caros classificados como baratos
+
+**🚧 Melhorias futuras:**
+
+- Engenharia de atributos  
+- Tratamento de outliers  
+- Testar modelos robustos (Random Forest, SVM, Gradient Boosting)
+
+---
+
+📌 *Novos projetos em breve, com foco em desafios reais, rigor estatístico e alto valor analítico.*
