@@ -40,9 +40,104 @@ Achieved **R² of 0.82** and classified listings as "cheap or expensive" with **
 
 ---
 
-## 📁 Detailed Projects
+Claro! Abaixo está a seção **“📁 Detailed Projects”** completa — primeiro em **inglês**, depois em **português**. Ela já está com os títulos em formato de âncoras para funcionar com os links internos do sumário. Basta colar isso no lugar da parte comentada como `<!-- detailed sections omitted for brevity -->`:
 
-<!-- detailed sections omitted for brevity, but stay as you've written -->
+---
+
+### 📁 Detailed Projects (English)
+
+---
+
+### 🧪 Project 01: Student Performance Classification
+
+🔗 **[Notebook → projeto1.ipynb](projeto1.ipynb)**
+
+> Supervised classification based on educational data (age, ethnicity, absences, etc.) with careful preprocessing and decision-making.
+
+**🌟 Highlights:**
+
+* Corrected a **critical labeling issue** in the `GradeClass` column from the original dataset.
+* Tackled heavy class imbalance using **SMOTE**, applied *after* the split to avoid leakage.
+* Built a robust pipeline focused on bias reduction and generalization.
+
+**📊 Results:**
+
+* **Accuracy:** 96%
+* **Macro F1-score:** 0.96
+* **Stable performance**, even on unbalanced data.
+
+---
+
+### 🧠 Project 02: Churn Prediction with EDA, Statistical Tests & Neural Networks
+
+🔗 **[Notebook → projeto2.ipynb](projeto2.ipynb)**
+
+> Integrated inferential statistics with neural networks to ensure **performance + interpretability** in churn modeling.
+
+**🔬 Hypothesis Testing:**
+
+* Chi-square → 📌 Gender influences churn
+* Mann-Whitney → 📌 Salary has **no** significant effect
+* Kruskal-Wallis → 📌 Number of products has nonlinear relationship with churn
+
+**🤖 Modeling with MLP:**
+
+* Multi-layer perceptron with **ReLU** and **sigmoid**
+* **Adam optimizer**, **Binary Crossentropy** loss
+* Data normalized and balanced with SMOTE
+
+**📈 Results:**
+
+* **Accuracy:** 82%
+* **F1-score:** 59%
+* **Recall:** 67%
+* **Precision:** 54%
+
+**💡 Key Insights:**
+
+* Age > 40 → 2x higher churn risk
+* German customers had higher churn rates
+* High balance and inactivity were strong churn indicators
+
+---
+
+### 🏠 Project 03: Rent Price Prediction with Regression & Classification
+
+🔗 **[Notebook → projeto3.ipynb](projeto3.ipynb)**
+
+> Price estimation and classification of rental listings based on real-world apartment data (area, rooms, bathrooms, garage, distance from downtown).
+
+**🔍 EDA Highlights:**
+
+* **Area (m²)** has strong positive effect on price
+* **Distance to city center** has a negative correlation
+* Model produced useful, intuitive coefficients
+
+**📉 Regression Results:**
+
+* **MAE:** R\$158.61
+* **R² Score:** 0.82
+* **Coefficients:**
+
+  * +R\$24.03/m²
+  * +R\$123.95 per room
+  * +R\$101.11 per bathroom
+  * +R\$196.86 if garage exists
+  * –R\$51.10 per km away from center
+
+**📊 Classification Results:**
+
+* **Accuracy:** 84%
+* **Precision:** 87%
+* **Recall:** 83%
+* ⚠️ 18 false negatives (expensive apartments classified as cheap)
+
+**🚧 Improvements Suggested:**
+
+* Feature engineering
+* Outlier treatment
+* More robust models (Random Forest, SVM, Gradient Boosting)
+
 
 ---
 
