@@ -148,7 +148,7 @@ Este repositório documenta meus estudos em Ciência de Dados, com foco em:
 
 ## ⚡ Visão Geral dos Projetos
 
-### ✅ [Projeto 01: Classificação da Performance de Estudantes](#-projeto-01-classificação-da-performance-de-estudantes)  
+### ✅ [Projeto 01: Classificação da Performance de Estudantes](#-projeto-01-classifica%C3%A7%C3%A3o-da-performance-de-estudantes-1)  
 📌 **Classificação supervisionada com correção crítica de rótulos e SMOTE aplicado de forma segura.**  
 Corrigi manualmente os rótulos da variável alvo (que estavam errados no Kaggle), apliquei SMOTE após o split e construí pipelines limpas que resultaram em **96% de acurácia e F1-score macro**.  
 🔗 **[Notebook → projeto1.ipynb](projeto1.ipynb)**
