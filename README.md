@@ -16,23 +16,23 @@ This repository documents my Data Science journey, with emphasis on:
 
 ---
 
-## ⚡ Project Highlights
+## ⚡ Project Highlights (Click on the title of the project to be redirected to more detailed description of the project)
 
-### ✅ [Project 01: Student Performance Classification](#-project-01-student-performance-classification-1)  
+### ✅ [Project 01: Student Performance Classification(Click here for more information on the project such as metrics,approach,etc...)](#-project-01-student-performance-classification-1)  
 📌 **Supervised classification with critical label correction and safe SMOTE application.**  
 I manually corrected mislabeled target values (present in the original Kaggle dataset), applied SMOTE only after the data split, and built solid pipelines that achieved **96% accuracy and macro F1-score**.  
 🔗 **[Notebook → projeto1.ipynb](projeto1.ipynb)**
 
 ---
 
-### 🚨 [Project 02: Churn Prediction with Statistical Testing + MLP](#-project-02-churn-prediction-with-eda-statistical-tests--neural-networks)  
+### 🚨 [Project 02: Churn Prediction with Statistical Testing + MLP (Click here for more information on the project such as metrics,approach,etc...)](#-project-02-churn-prediction-with-eda-statistical-tests--neural-networks)  
 📌 **Combination of inferential statistics and neural networks.**  
 I applied hypothesis tests (Chi-square, Mann-Whitney, Kruskal-Wallis) before modeling to validate business assumptions and improve interpretability.  
 🔗 **[Notebook → projeto2.ipynb](estudo_caso_5_churn.ipynb)**
 
 ---
 
-### 🏙️ [Project 03: Rent Price Prediction with Regression & Classification](#-project-03-rent-price-prediction-with-regression--classification)  
+### 🏙️ [Project 03: Rent Price Prediction with Regression & Classification(Click here for more information on the project such as metrics,approach,etc...)](#-project-03-rent-price-prediction-with-regression--classification)  
 📌 **Linear regression and interpretable classification based on real-world housing features.**  
 Achieved **R² of 0.82** and classified listings as "cheap or expensive" with **84% accuracy**, using real estate attributes like size, rooms, garage, and distance from city center.  
 🔗 **[Notebook → projeto3.ipynb](projeto3.ipynb)**
@@ -146,23 +146,23 @@ Este repositório documenta meus estudos em Ciência de Dados, com foco em:
 
 ---
 
-## ⚡ Visão Geral dos Projetos
+## ⚡ Visão Geral dos Projetos (Clique no subtítulo do projeto para ser direcionado a mais detalhes)
 
-### ✅ [Projeto 01: Classificação da Performance de Estudantes](#-projeto-01-classifica%C3%A7%C3%A3o-da-performance-de-estudantes-1)  
+### ✅ [Projeto 01: Classificação da Performance de Estudantes(Clique aqui para mais detalhes)](#-projeto-01-classifica%C3%A7%C3%A3o-da-performance-de-estudantes-1)  
 📌 **Classificação supervisionada com correção crítica de rótulos e SMOTE aplicado de forma segura.**  
 Corrigi manualmente os rótulos da variável alvo (que estavam errados no Kaggle), apliquei SMOTE após o split e construí pipelines limpas que resultaram em **96% de acurácia e F1-score macro**.  
 🔗 **[Notebook → projeto1.ipynb](projeto1.ipynb)**
 
 ---
 
-### 🚨 [Projeto 02: Previsão de Churn com Testes Estatísticos e MLP](#-projeto-02-previs%C3%A3o-de-churn-com-eda-testes-estat%C3%ADsticos-e-rede-neural)  
+### 🚨 [Projeto 02: Previsão de Churn com Testes Estatísticos e MLP(Clique aqui para mais detalhes do projeto)](#-projeto-02-previs%C3%A3o-de-churn-com-eda-testes-estat%C3%ADsticos-e-rede-neural)  
 📌 **Integração de testes estatísticos com rede neural supervisionada.**  
 Utilizei testes como Qui-quadrado, Mann-Whitney e Kruskal-Wallis antes de treinar uma MLP, garantindo **decisões interpretáveis e validadas**.  
 🔗 **[Notebook → projeto2.ipynb](projeto2.ipynb)**
 
 ---
 
-### 🏙️ [Projeto 03: Previsão de Preço de Aluguel com Regressão e Classificação](#-projeto-03-previs%C3%A3o-de-aluguel-com-regress%C3%A3o-linear-e-classifica%C3%A7%C3%A3o) 
+### 🏙️ [Projeto 03: Previsão de Preço de Aluguel com Regressão e Classificação(Clique aqui para mais detalhes do projeto)](#-projeto-03-previs%C3%A3o-de-aluguel-com-regress%C3%A3o-linear-e-classifica%C3%A7%C3%A3o) 
 📌 **Regressão linear e classificação interpretável baseada em variáveis reais de imóveis.**  
 Obtive **R² de 0.82** e classifiquei os imóveis como “caros ou baratos” com **84% de acurácia**, com base em características como metragem, quartos, garagem e distância do centro.  
 🔗 **[Notebook → projeto3.ipynb](projeto3.ipynb)**
