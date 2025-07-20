@@ -28,7 +28,7 @@ I manually corrected mislabeled target values (present in the original Kaggle da
 ### 🚨 [Project 02: Churn Prediction with Statistical Testing + MLP](#-project-02-churn-prediction-with-eda-statistical-tests--neural-networks)  
 📌 **Combination of inferential statistics and neural networks.**  
 I applied hypothesis tests (Chi-square, Mann-Whitney, Kruskal-Wallis) before modeling to validate business assumptions and improve interpretability.  
-🔗 **[Notebook → projeto2.ipynb](projeto2.ipynb)**
+🔗 **[Notebook → projeto2.ipynb](estudo_caso_5_churn.ipynb)**
 
 ---
 
@@ -61,7 +61,7 @@ Achieved **R² of 0.82** and classified listings as "cheap or expensive" with **
 ---
 
 ### 🧠 Project 02: Churn Prediction with EDA, Statistical Tests & Neural Networks  
-🔗 **[Notebook → projeto2.ipynb](projeto2.ipynb)**
+🔗 **[Notebook → projeto2.ipynb](estudo_caso_5_churn.ipynb)**
 
 > Used statistical inference and MLPs to predict customer churn while ensuring explainability.
 
