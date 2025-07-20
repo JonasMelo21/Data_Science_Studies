@@ -10,7 +10,7 @@
 This repository documents my Data Science journey, with emphasis on:
 
 - 🧼 Robust data cleaning and preprocessing  
-- 📊 Exploratory analysis and statistical interpretation  
+- 📊 Exploratory analysis and statistical validation (hipotesis tests)  
 - 🤖 Supervised machine learning with critical thinking  
 - 🧠 Learning from mistakes and validation procedures  
 
@@ -140,7 +140,7 @@ Achieved **R² of 0.82** and classified listings as "cheap or expensive" with **
 Este repositório documenta meus estudos em Ciência de Dados, com foco em:
 
 - 🧼 Limpeza e pré-processamento robusto  
-- 📊 Análise exploratória e validação estatística  
+- 📊 Análise exploratória e validação estatística(testes de hipótese)  
 - 🤖 Modelagem supervisionada com raciocínio crítico  
 - 🧠 Aprendizado com validações e erros
 
