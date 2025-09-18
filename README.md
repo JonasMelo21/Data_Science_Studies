@@ -148,7 +148,7 @@ Este repositório documenta meus estudos em Ciência de Dados, com foco em:
 
 ## ⚡ Visão Geral dos Projetos (Clique no subtítulo do projeto para ser direcionado a mais detalhes)
 
-### ✅ [Projeto 01: Classificação da Performance de Estudantes(Clique aqui para mais detalhes)](#-projeto-01-classifica%C3%A7%C3%A3o-da-performance-de-estudantes-1)  
+### ✅ [Projeto 01: Classificação da Performance de Estudantes(Clique aqui para mais detalhes)](https://github.com/JonasMelo21/Data_Science_Studies?tab=readme-ov-file#-project-01-student-performance-classification)  
 📌 **Classificação supervisionada com correção crítica de rótulos e SMOTE aplicado de forma segura.**  
 Corrigi manualmente os rótulos da variável alvo (que estavam errados no Kaggle), apliquei SMOTE após o split e construí pipelines limpas que resultaram em **96% de acurácia e F1-score macro**.  
 🔗 **[Notebook → projeto1.ipynb](projeto1.ipynb)**
