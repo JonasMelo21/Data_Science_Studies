@@ -155,14 +155,14 @@ Corrigi manualmente os rótulos da variável alvo (que estavam errados no Kaggle
 
 ---
 
-### 🚨 [Projeto 02: Previsão de Churn com Testes Estatísticos e MLP(Clique aqui para mais detalhes do projeto)](#-projeto-02-previs%C3%A3o-de-churn-com-eda-testes-estat%C3%ADsticos-e-rede-neural)  
+### 🚨 [Projeto 02: Previsão de Churn com Testes Estatísticos e MLP(Clique aqui para mais detalhes do projeto)](https://github.com/JonasMelo21/Data_Science_Studies?tab=readme-ov-file#-projeto-02-previs%C3%A3o-de-churn-com-eda-testes-estat%C3%ADsticos-e-rede-neural)  
 📌 **Integração de testes estatísticos com rede neural supervisionada.**  
 Utilizei testes como Qui-quadrado, Mann-Whitney e Kruskal-Wallis antes de treinar uma MLP, garantindo **decisões interpretáveis e validadas**.  
 🔗 **[Notebook → projeto2.ipynb](projeto2.ipynb)**
 
 ---
 
-### 🏙️ [Projeto 03: Previsão de Preço de Aluguel com Regressão e Classificação(Clique aqui para mais detalhes do projeto)](#-projeto-03-previs%C3%A3o-de-aluguel-com-regress%C3%A3o-linear-e-classifica%C3%A7%C3%A3o) 
+### 🏙️ [Projeto 03: Previsão de Preço de Aluguel com Regressão e Classificação(Clique aqui para mais detalhes do projeto)](https://github.com/JonasMelo21/Data_Science_Studies?tab=readme-ov-file#-projeto-03-previs%C3%A3o-de-aluguel-com-regress%C3%A3o-linear-e-classifica%C3%A7%C3%A3o) 
 📌 **Regressão linear e classificação interpretável baseada em variáveis reais de imóveis.**  
 Obtive **R² de 0.82** e classifiquei os imóveis como “caros ou baratos” com **84% de acurácia**, com base em características como metragem, quartos, garagem e distância do centro.  
 🔗 **[Notebook → projeto3.ipynb](projeto3.ipynb)**
