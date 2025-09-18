@@ -178,7 +178,7 @@ Obtive **R² de 0.82** e classifiquei os imóveis como “caros ou baratos” co
 
 **🌟 Destaques:**
 
-- Corrigi um **erro do dataset original** na coluna `GradeClass`, que rotulava mal alunos com GPA baixo  
+- Corrigi um **erro do dataset original** na coluna `GradeClass`, que atribuía os alunos a classes incorretas,com base em seu GPA.  
 - Usei **SMOTE com segurança**, após o split, evitando vazamento  
 - Construi pipeline robusto e interpretável
 
