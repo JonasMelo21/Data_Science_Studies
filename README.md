@@ -21,7 +21,7 @@ This repository documents my Data Science journey, with emphasis on:
 ### ✅ [Project 01: Student Performance Classification(Click here for more information on the project such as metrics,approach,etc...)](#-project-01-student-performance-classification-1)  
 📌 **Supervised classification with critical label correction and safe SMOTE application.**  
 I manually corrected mislabeled target values (present in the original Kaggle dataset), applied SMOTE only after the data split, and built solid pipelines that achieved **96% accuracy and macro F1-score**.  
-🔗 **[Notebook → projeto1.ipynb](projeto1.ipynb)**
+🔗 **[Notebook → projeto1.ipynb](studentperformance.ipynb)**
 
 ---
 
@@ -42,7 +42,7 @@ Achieved **R² of 0.82** and classified listings as "cheap or expensive" with **
 ## 📁 Detailed Projects
 
 ### 🧪 Project 01: Student Performance Classification  
-🔗 **[Notebook → projeto1.ipynb](projeto1.ipynb)**
+🔗 **[Notebook → projeto1.ipynb](studentperformance.ipynb)**
 
 > Supervised classification task using educational data (age, race, GPA, etc.), with a strong focus on data cleaning and class balance.
 
@@ -151,7 +151,7 @@ Este repositório documenta meus estudos em Ciência de Dados, com foco em:
 ### ✅ [Projeto 01: Classificação da Performance de Estudantes(Clique aqui para mais detalhes)](https://github.com/JonasMelo21/Data_Science_Studies?tab=readme-ov-file#-projeto-01-classifica%C3%A7%C3%A3o-da-performance-de-estudantes)  
 📌 **Classificação supervisionada com correção crítica de rótulos e SMOTE aplicado de forma segura.**  
 Corrigi manualmente os rótulos da variável alvo (que estavam errados no Kaggle), apliquei SMOTE após o split e construí pipelines limpas que resultaram em **96% de acurácia e F1-score macro**.  
-🔗 **[Notebook → projeto1.ipynb](projeto1.ipynb)**
+🔗 **[Notebook → projeto1.ipynb](studentperformance.ipynb)**
 
 ---
 
@@ -172,7 +172,7 @@ Obtive **R² de 0.82** e classifiquei os imóveis como “caros ou baratos” co
 ## 📁 Projetos Detalhados
 
 ### 🧪 Projeto 01: Classificação da Performance de Estudantes  
-🔗 **[Notebook → projeto1.ipynb](projeto1.ipynb)**
+🔗 **[Notebook → projeto1.ipynb](studentperformance.ipynb)**
 
 > Classificação baseada em dados educacionais (idade, etnia, faltas, etc.), com foco em decisões bem fundamentadas desde o pré-processamento.
 
