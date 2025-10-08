@@ -158,7 +158,7 @@ Corrigi manualmente os rótulos da variável alvo (que estavam errados no Kaggle
 ### 🚨 [Projeto 02: Previsão de Churn com Testes Estatísticos e MLP(Clique aqui para mais detalhes do projeto)](https://github.com/JonasMelo21/Data_Science_Studies?tab=readme-ov-file#-projeto-02-previs%C3%A3o-de-churn-com-eda-testes-estat%C3%ADsticos-e-rede-neural)  
 📌 **Integração de testes estatísticos com rede neural supervisionada.**  
 Utilizei testes como Qui-quadrado, Mann-Whitney e Kruskal-Wallis antes de treinar uma MLP, garantindo **decisões interpretáveis e validadas**.  
-🔗 **[Notebook → projeto2.ipynb](estudo_de_cas_5_churn)**
+🔗 **[Notebook → projeto2.ipynb](estudo_caso_5_churn.ipynb)**
 
 ---
 
@@ -191,7 +191,7 @@ Obtive **R² de 0.82** e classifiquei os imóveis como “caros ou baratos” co
 ---
 
 ### 🧠 Projeto 02: Previsão de Churn com EDA, Testes Estatísticos e Rede Neural  
-🔗 **[Notebook → projeto2.ipynb](projeto2.ipynb)**
+🔗 **[Notebook → projeto2.ipynb](estudo_caso_5_churn.ipynb)**
 
 > Predição de churn usando inferência estatística e MLP com foco em **confiabilidade e explicabilidade**.
 
