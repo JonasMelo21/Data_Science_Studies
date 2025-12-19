@@ -1,7 +1,6 @@
 # 🧠 Data Science Studies
 
-📝 *This README is available in English and Portuguese.*  
-📌 [Click here to read in Portuguese.](#-estudos-em-ciência-de-dados)
+📝 *This README is available in English and Portuguese.* 📌 [Click here to read in Portuguese.](#-estudos-em-ciência-de-dados)
 
 ---
 
@@ -10,101 +9,115 @@
 This repository documents my Data Science journey, with emphasis on:
 
 - 🧼 Robust data cleaning and preprocessing  
-- 📊 Exploratory analysis and statistical validation (hipotesis tests)  
+- 📊 Exploratory analysis and statistical validation (hypothesis tests)  
 - 🤖 Supervised machine learning with critical thinking  
 - 🧠 Learning from mistakes and validation procedures  
+- 🚀 End-to-End pipelines (ETL → Modeling → Deploy)
 
 ---
 
-## ⚡ Project Highlights (Click on the title of the project to be redirected to more detailed description of the project)
+## ⚡ Project Highlights (Click on the title of the project to be redirected to more detailed description)
 
-### ✅ [Project 01: Student Performance Classification(Click here for more information on the project such as metrics,approach,etc...)](#-project-01-student-performance-classification-1)  
-📌 **Supervised classification with critical label correction and safe SMOTE application.**  
-I manually corrected mislabeled target values (present in the original Kaggle dataset), applied SMOTE only after the data split, and built solid pipelines that achieved **96% accuracy and macro F1-score**.  
+### ⚽ [Project 01: Fut-IA - End-to-End Football Predictor (Click here for details)](#-project-04-fut-ia---end-to-end-football-predictor)
+📌 **Full-stack Data Science: API Ingestion, Random Forest & Web App Deploy.** A complete production pipeline that predicts Copa do Brasil match outcomes. It automates data fetching from APIs, calculates rolling averages for team form, and serves predictions via an interactive Streamlit dashboard.  
+🔗 **[Repository → JonasMelo21/futebol-preditor](https://github.com/JonasMelo21/futebol-preditor)**
+
+---
+
+### ✅ [Project 02: Student Performance Classification (Click here for details)](#-project-01-student-performance-classification-1)  
+📌 **Supervised classification with critical label correction and safe SMOTE application.** I manually corrected mislabeled target values (present in the original Kaggle dataset), applied SMOTE only after the data split, and built solid pipelines that achieved **96% accuracy and macro F1-score**.  
 🔗 **[Notebook → projeto1.ipynb](studentperformance.ipynb)**
 
 ---
 
-### 🚨 [Project 02: Churn Prediction with Statistical Testing + MLP (Click here for more information on the project such as metrics,approach,etc...)](#-project-02-churn-prediction-with-eda-statistical-tests--neural-networks)  
-📌 **Combination of inferential statistics and neural networks.**  
-I applied hypothesis tests (Chi-square, Mann-Whitney, Kruskal-Wallis) before modeling to validate business assumptions and improve interpretability.  
+### 🚨 [Project 03: Churn Prediction with Statistical Testing + MLP (Click here for details)](#-project-02-churn-prediction-with-eda-statistical-tests--neural-networks)  
+📌 **Combination of inferential statistics and neural networks.** I applied hypothesis tests (Chi-square, Mann-Whitney, Kruskal-Wallis) before modeling to validate business assumptions and improve interpretability.  
 🔗 **[Notebook → projeto2.ipynb](estudo_caso_5_churn.ipynb)**
 
 ---
 
-### 🏙️ [Project 03: Rent Price Prediction with Regression & Classification(Click here for more information on the project such as metrics,approach,etc...)](#-project-03-rent-price-prediction-with-regression--classification)  
-📌 **Linear regression and interpretable classification based on real-world housing features.**  
-Achieved **R² of 0.82** and classified listings as "cheap or expensive" with **84% accuracy**, using real estate attributes like size, rooms, garage, and distance from city center.  
+### 🏙️ [Project 04: Rent Price Prediction with Regression & Classification (Click here for details)](#-project-03-rent-price-prediction-with-regression--classification)  
+📌 **Linear regression and interpretable classification based on real-world housing features.** Achieved **R² of 0.82** and classified listings as "cheap or expensive" with **84% accuracy**, using real estate attributes like size, rooms, garage, and distance from city center.  
 🔗 **[Notebook → projeto3.ipynb](projeto3.ipynb)**
 
 ---
 
 ## 📁 Detailed Projects
 
-### 🧪 Project 01: Student Performance Classification  
+### ⚽ Project 01: Fut-IA - End-to-End Football Predictor  
+🔗 **[Repository → JonasMelo21/futebol-preditor](https://github.com/JonasMelo21/futebol-preditor)**
+
+> A production-ready Machine Learning application that predicts football match results based on team form (Rolling Averages).
+
+**⚙️ Architecture & Tech Stack:**
+- **ETL:** Automated ingestion from RapidAPI (API-Football) using Python.
+- **Feature Engineering:** Calculated rolling averages (last 5 games) for Goals, Possession, and Shots on Target.
+- **Modeling:** Random Forest Classifier trained on historical data.
+- **Deploy:** Interactive web application built with **Streamlit** and hosted on Streamlit Cloud.
+
+**📊 Features:**
+- Real-time probability calculation for Home Win, Draw, or Away Win.
+- Interactive Radar Charts (Plotly) comparing team statistics.
+- CI/CD pipeline integrated with GitHub.
+
+---
+
+### 🧪 Project 02: Student Performance Classification  
 🔗 **[Notebook → projeto1.ipynb](studentperformance.ipynb)**
 
 > Supervised classification task using educational data (age, race, GPA, etc.), with a strong focus on data cleaning and class balance.
 
 **🌟 Key Points:**
-
 - Fixed **target labeling issues** in the `GradeClass` column  
 - Applied **SMOTE after train-test split** to avoid data leakage  
 - Built a clean and interpretable pipeline
 
 **📊 Results:**
-
 - **Accuracy:** 96%  
 - **Macro F1-score:** 0.96  
 - High generalization even under imbalance
 
 ---
 
-### 🧠 Project 02: Churn Prediction with EDA, Statistical Tests & Neural Networks  
+### 🧠 Project 03: Churn Prediction with EDA, Statistical Tests & Neural Networks  
 🔗 **[Notebook → projeto2.ipynb](estudo_caso_5_churn.ipynb)**
 
 > Used statistical inference and MLPs to predict customer churn while ensuring explainability.
 
 **🔬 Statistical Tests:**
-
 - Chi-square → 📌 Gender influences churn  
 - Mann-Whitney → 📌 Salary has **no** significant impact  
 - Kruskal-Wallis → 📌 Product count is related to churn
 
 **🤖 Modeling:**
-
 - MLP with ReLU hidden layers and Sigmoid output  
 - Adam optimizer, Binary Crossentropy loss  
 - SMOTE balancing and normalized features
 
 **📈 Results:**
-
 - **Accuracy:** 82%  
 - **F1-score:** 59%  
 - **Recall:** 67%  
 - **Precision:** 54%
 
 **💡 Insights:**
-
 - Age > 40 doubles churn risk  
 - German clients churn more  
 - Inactive users with high balances are more likely to leave
 
 ---
 
-### 🏠 Project 03: Rent Price Prediction with Regression & Classification  
+### 🏠 Project 04: Rent Price Prediction with Regression & Classification  
 🔗 **[Notebook → projeto3.ipynb](projeto3.ipynb)**
 
 > Estimated apartment rental prices and built a binary classifier for "cheap vs expensive".
 
 **🔍 Key Insights from EDA:**
-
 - Apartment size has a strong positive impact  
 - Distance from downtown has negative impact  
 - Coefficients are easy to interpret and useful
 
 **📉 Regression Results:**
-
 - **MAE:** R$158.61  
 - **R²:** 0.82  
 - **Coefficients:**
@@ -115,14 +128,12 @@ Achieved **R² of 0.82** and classified listings as "cheap or expensive" with **
   - –R$51.10/km from city center
 
 **📊 Classification Results:**
-
 - **Accuracy:** 84%  
 - **Precision:** 87%  
 - **Recall:** 83%  
 - ⚠️ 18 false negatives → Expensive rentals classified as cheap
 
 **🚧 Next Steps:**
-
 - Feature engineering  
 - Outlier handling  
 - Try advanced models (Random Forest, SVM, Gradient Boosting)
@@ -140,101 +151,115 @@ Achieved **R² of 0.82** and classified listings as "cheap or expensive" with **
 Este repositório documenta meus estudos em Ciência de Dados, com foco em:
 
 - 🧼 Limpeza e pré-processamento robusto  
-- 📊 Análise exploratória e validação estatística(testes de hipótese)  
+- 📊 Análise exploratória e validação estatística (testes de hipótese)  
 - 🤖 Modelagem supervisionada com raciocínio crítico  
-- 🧠 Aprendizado com validações e erros
+- 🧠 Aprendizado com validações e erros  
+- 🚀 Pipelines End-to-End (ETL → Modelagem → Deploy)
 
 ---
 
-## ⚡ Visão Geral dos Projetos (Clique no subtítulo do projeto para ser direcionado a mais detalhes)
+## ⚡ Visão Geral dos Projetos (Clique no título para ver mais detalhes)
 
-### ✅ [Projeto 01: Classificação da Performance de Estudantes(Clique aqui para mais detalhes)](https://github.com/JonasMelo21/Data_Science_Studies?tab=readme-ov-file#-projeto-01-classifica%C3%A7%C3%A3o-da-performance-de-estudantes)  
-📌 **Classificação supervisionada com correção crítica de rótulos e SMOTE aplicado de forma segura.**  
-Corrigi manualmente os rótulos da variável alvo (que estavam errados no Kaggle), apliquei SMOTE após o split e construí pipelines limpas que resultaram em **96% de acurácia e F1-score macro**.  
+### ⚽ [Projeto 01: Fut-IA - Preditor de Futebol End-to-End (Clique aqui)](https://github.com/JonasMelo21/futebol-preditor)
+📌 **Data Science Full-stack: Ingestão de API, Random Forest e Web App.** Um pipeline de produção completo que prevê resultados da Copa do Brasil. Automatiza a busca de dados via API, calcula médias móveis para "forma" do time e serve previsões via dashboard interativo no Streamlit.  
+🔗 **[Repositório → JonasMelo21/futebol-preditor](https://github.com/JonasMelo21/futebol-preditor)**
+
+---
+
+### ✅ [Projeto 02: Classificação da Performance de Estudantes (Clique aqui)](https://github.com/JonasMelo21/Data_Science_Studies?tab=readme-ov-file#-projeto-01-classifica%C3%A7%C3%A3o-da-performance-de-estudantes)  
+📌 **Classificação supervisionada com correção crítica de rótulos e SMOTE aplicado de forma segura.** Corrigi manualmente os rótulos da variável alvo (que estavam errados no Kaggle), apliquei SMOTE após o split e construí pipelines limpas que resultaram em **96% de acurácia e F1-score macro**.  
 🔗 **[Notebook → projeto1.ipynb](studentperformance.ipynb)**
 
 ---
 
-### 🚨 [Projeto 02: Previsão de Churn com Testes Estatísticos e MLP(Clique aqui para mais detalhes do projeto)](https://github.com/JonasMelo21/Data_Science_Studies?tab=readme-ov-file#-projeto-02-previs%C3%A3o-de-churn-com-eda-testes-estat%C3%ADsticos-e-rede-neural)  
-📌 **Integração de testes estatísticos com rede neural supervisionada.**  
-Utilizei testes como Qui-quadrado, Mann-Whitney e Kruskal-Wallis antes de treinar uma MLP, garantindo **decisões interpretáveis e validadas**.  
+### 🚨 [Projeto 03: Previsão de Churn com Testes Estatísticos e MLP (Clique aqui)](https://github.com/JonasMelo21/Data_Science_Studies?tab=readme-ov-file#-projeto-02-previs%C3%A3o-de-churn-com-eda-testes-estat%C3%ADsticos-e-rede-neural)  
+📌 **Integração de testes estatísticos com rede neural supervisionada.** Utilizei testes como Qui-quadrado, Mann-Whitney e Kruskal-Wallis antes de treinar uma MLP, garantindo **decisões interpretáveis e validadas**.  
 🔗 **[Notebook → projeto2.ipynb](estudo_caso_5_churn.ipynb)**
 
 ---
 
-### 🏙️ [Projeto 03: Previsão de Preço de Aluguel com Regressão e Classificação(Clique aqui para mais detalhes do projeto)](https://github.com/JonasMelo21/Data_Science_Studies?tab=readme-ov-file#-projeto-03-previs%C3%A3o-de-aluguel-com-regress%C3%A3o-linear-e-classifica%C3%A7%C3%A3o) 
-📌 **Regressão linear e classificação interpretável baseada em variáveis reais de imóveis.**  
-Obtive **R² de 0.82** e classifiquei os imóveis como “caros ou baratos” com **84% de acurácia**, com base em características como metragem, quartos, garagem e distância do centro.  
+### 🏙️ [Projeto 04: Previsão de Preço de Aluguel com Regressão e Classificação (Clique aqui)](https://github.com/JonasMelo21/Data_Science_Studies?tab=readme-ov-file#-projeto-03-previs%C3%A3o-de-aluguel-com-regress%C3%A3o-linear-e-classifica%C3%A7%C3%A3o) 
+📌 **Regressão linear e classificação interpretável baseada em variáveis reais de imóveis.** Obtive **R² de 0.82** e classifiquei os imóveis como “caros ou baratos” com **84% de acurácia**, com base em características como metragem, quartos, garagem e distância do centro.  
 🔗 **[Notebook → projeto3.ipynb](projeto3.ipynb)**
 
 ---
 
 ## 📁 Projetos Detalhados
 
-### 🧪 Projeto 01: Classificação da Performance de Estudantes  
+### ⚽ Projeto 01: Fut-IA - Preditor de Futebol End-to-End  
+🔗 **[Repositório → JonasMelo21/futebol-preditor](https://github.com/JonasMelo21/futebol-preditor)**
+
+> Uma aplicação de Machine Learning pronta para produção que prevê resultados de jogos com base na forma recente (Médias Móveis).
+
+**⚙️ Arquitetura e Stack:**
+- **ETL:** Ingestão automatizada da RapidAPI (API-Football) usando Python.
+- **Engenharia de Features:** Cálculo de médias móveis (últimos 5 jogos) para Gols, Posse e Chutes ao Gol.
+- **Modelagem:** Random Forest Classifier treinado com dados históricos.
+- **Deploy:** Aplicação web interativa construída com **Streamlit** e hospedada na nuvem.
+
+**📊 Funcionalidades:**
+- Cálculo de probabilidade em tempo real (Vitória Casa, Empate, Vitória Visitante).
+- Gráficos de Radar (Plotly) interativos comparando estatísticas.
+- Pipeline de CI/CD integrado ao GitHub.
+
+---
+
+### 🧪 Projeto 02: Classificação da Performance de Estudantes  
 🔗 **[Notebook → projeto1.ipynb](studentperformance.ipynb)**
 
 > Classificação baseada em dados educacionais (idade, etnia, faltas, etc.), com foco em decisões bem fundamentadas desde o pré-processamento.
 
 **🌟 Destaques:**
-
-- Corrigi um **erro do dataset original** na coluna `GradeClass`, que atribuía os alunos a classes incorretas,com base em seu GPA.  
+- Corrigi um **erro do dataset original** na coluna `GradeClass`, que atribuía os alunos a classes incorretas com base em seu GPA.  
 - Usei **SMOTE com segurança**, após o split, evitando vazamento  
 - Construi pipeline robusto e interpretável
 
 **📊 Resultados:**
-
 - **Acurácia:** 96%  
 - **F1-score (macro):** 0.96  
 - Estabilidade mesmo com dados desbalanceados
 
 ---
 
-### 🧠 Projeto 02: Previsão de Churn com EDA, Testes Estatísticos e Rede Neural  
+### 🧠 Projeto 03: Previsão de Churn com EDA, Testes Estatísticos e Rede Neural  
 🔗 **[Notebook → projeto2.ipynb](estudo_caso_5_churn.ipynb)**
 
 > Predição de churn usando inferência estatística e MLP com foco em **confiabilidade e explicabilidade**.
 
 **🔬 Testes aplicados:**
-
 - Qui-quadrado → 📌 Gênero influencia no churn  
 - Mann-Whitney → 📌 Salário **não** tem impacto significativo  
 - Kruskal-Wallis → 📌 Número de produtos tem relação com churn
 
 **🤖 Modelagem:**
-
 - MLP com ReLU e saída Sigmoid  
 - Otimizador Adam, Binary Crossentropy  
 - SMOTE + normalização dos dados
 
 **📈 Resultados:**
-
 - **Acurácia:** 82%  
 - **F1-score:** 59%  
 - **Recall:** 67%  
 - **Precisão:** 54%
 
 **💡 Insights práticos:**
-
 - Idade > 40 dobra o risco de churn  
 - Clientes da Alemanha saem mais  
 - Clientes inativos com saldo alto têm maior chance de sair
 
 ---
 
-### 🏠 Projeto 03: Previsão de Aluguel com Regressão Linear e Classificação  
+### 🏠 Projeto 04: Previsão de Aluguel com Regressão Linear e Classificação  
 🔗 **[Notebook → projeto3.ipynb](projeto3.ipynb)**
 
 > Estimativa do preço do aluguel e classificação de imóveis como **caros ou baratos**.
 
 **🔍 Descobertas da EDA:**
-
 - Área do imóvel impacta positivamente  
 - Distância do centro impacta negativamente  
 - Coeficientes intuitivos e úteis
 
 **📉 Resultados da Regressão:**
-
 - **MAE:** R$158,61  
 - **R²:** 0.82  
 - **Coeficientes:**
@@ -245,14 +270,12 @@ Obtive **R² de 0.82** e classifiquei os imóveis como “caros ou baratos” co
   - –R$51,10/km do centro
 
 **📊 Resultados da Classificação:**
-
 - **Acurácia:** 84%  
 - **Precisão:** 87%  
 - **Recall:** 83%  
 - ⚠️ 18 falsos negativos → imóveis caros classificados como baratos
 
 **🚧 Melhorias futuras:**
-
 - Engenharia de atributos  
 - Tratamento de outliers  
 - Testar modelos robustos (Random Forest, SVM, Gradient Boosting)
